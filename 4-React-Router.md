@@ -20,13 +20,6 @@ lekin **React Router** use karke hum multiple pages jaisa experience create kar 
 /about → About Component
 /contact → Contact Component
 
-yaml
-Copy code
-
-👉 Jab user link pe click kare, to component change ho jaye lekin page reload **na ho**.
-
----
-
 ## 2️⃣ Setting up React Router DOM
 
 ### 🔧 Installation:
@@ -63,7 +56,7 @@ Example use case:
 
 /dashboard/settings
 
-💻 Example Code:
+🅰️ Example Code:
 jsx
 Copy code
 import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
@@ -108,7 +101,7 @@ function App() {
 }
 
 export default App;
-🧭 Output:
+✅ Output:
 bash
 Copy code
 / → Home Page
@@ -125,7 +118,7 @@ function User() {
   const { id } = useParams();
   return <h2>User Page - ID: {id}</h2>;
 }
-URLs Example:
+🅰️ URLs Example:
 
 sql
 Copy code
@@ -139,13 +132,12 @@ import { useNavigate } from "react-router-dom";
 
 const navigate = useNavigate();
 navigate("/about");
-👉 Isse programmatically navigation hoti hai, jaise button click pe page change.
 
 5️⃣ Protected Routes and Redirects
 Protected Routes wo hote hain jahan sirf logged-in user hi ja sakta hai.
 Agar user login nahi hai, to usse automatically redirect kar diya jata hai login page pe.
 
-💻 Example:
+🅰️ Example:
 jsx
 Copy code
 import { Navigate } from "react-router-dom";
@@ -154,7 +146,7 @@ import { Navigate } from "react-router-dom";
   path="/dashboard" 
   element={isLoggedIn ? <Dashboard /> : <Navigate to="/login" />} 
 />
-🧩 Full Dynamic Route Example
+✅ Full Dynamic Route Example
 jsx
 Copy code
 import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
@@ -176,7 +168,7 @@ function App() {
 }
 
 export default App;
-Output:
+✅ Output:
 
 sql
 Copy code
