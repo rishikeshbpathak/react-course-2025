@@ -1,4 +1,4 @@
-## 7. Working with APIs
+## Working with APIs
 
 React me APIs ke saath kaam karna aaj-kal har project ka important part hota hai. API basically server se data lane ya server ko data bhejne ka tareeka hota hai.
 
